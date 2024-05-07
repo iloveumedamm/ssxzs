@@ -7,3 +7,11 @@ dnspython
 requests
 jinja2
 pyrogram
+tycrypto
+aiofiles
+aiohttp
+aiohttp_session
+cryptography
+pyrofork
+python-dotenv
+tgcrypto

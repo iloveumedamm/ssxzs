@@ -60,10 +60,6 @@ async def private_receive_handler(bot: Client, message: Message):
     & (
             filters.document
             | filters.video
-            | filters.video_note
-            | filters.audio
-            | filters.voice
-            | filters.photo
     )
 )
 async def channel_receive_handler(bot: Client, message: Message):
@@ -80,7 +76,7 @@ async def channel_receive_handler(bot: Client, message: Message):
         reply_markup, stream_text = await gen_linkx(_id=inserted_id)
         await bot.send_photo(
             photo=Telegram.MOVIE_PIC,
-            chat_id=Telegram.INDEX_CHANNEL,
+            chat_id=Telegram.UPDATE_CHANNEL,
             caption=stream_text,
             parse_mode=ParseMode.HTML
         )
@@ -95,5 +91,4 @@ async def channel_receive_handler(bot: Client, message: Message):
     except Exception as e:
         await bot.send_message(chat_id=Telegram.ULOG_CHANNEL, text=f"**#EʀʀᴏʀTʀᴀᴄᴋᴇʙᴀᴄᴋ:** `{e}`",
                                disable_web_page_preview=True)
-        print(f"Cᴀɴ'ᴛ Eᴅɪᴛ Bʀᴏᴀᴅᴄᴀsᴛ Mᴇssᴀɢᴇ!\nEʀʀᴏʀ:  **Gɪᴠᴇ ᴍᴇ ᴇᴅɪᴛ ᴘᴇʀᴍɪssɪᴏɴ ɪɴ ᴜᴘᴅᴀᴛᴇs ᴀɴᴅ ʙɪɴ Cʜᴀɴɴᴇʟ!{e}**")
-
+        print(f"Cᴀɴ'ᴛ Eᴅɪᴛ Bʀᴏᴀᴅᴄᴀsᴛ Mᴇssᴀɢᴇ!\nEʀʀᴏʀ:  **Gɪᴠᴇ ᴍᴇ ᴇᴅɪᴛ ᴘᴇʀᴍɪssɪᴏɴ ɪɴ ᴜᴘᴅᴀᴛᴇs ᴀɴᴅ ʙɪɴ Cʜᴀɴɴᴇʟ!{e}**")        

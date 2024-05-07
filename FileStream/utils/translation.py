@@ -36,7 +36,6 @@ class LANG(object):
 <b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <b>{}</b>\n
 <b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <code>{}</code>\n
 <b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <code>{}</code>\n</b>
-share {}
 """
 
 

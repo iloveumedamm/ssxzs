@@ -15,3 +15,12 @@ cryptography
 pyrofork
 python-dotenv
 tgcrypto
+aiohttp
+pyrofork
+python-dotenv
+tgcrypto
+motor
+aiofiles
+dnspython
+requests
+jinja2

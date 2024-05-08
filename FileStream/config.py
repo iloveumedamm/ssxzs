@@ -34,7 +34,7 @@ class Telegram:
     SECONDARY = True if MODE.lower() == "secondary" else False
     AUTH_USERS = list(set(int(x) for x in str(env.get("AUTH_USERS", "")).split()))
     ADMINS_PERSONS = list(set(int(x) for x in str(env.get("ADMINS_PERSONS", "5791145987")).split()))
-    UPLOAD_CHANNEL = int(env.get("UPLOAD_CHANNEL", "-1002083903461"))
+    UPLOAD_CHANNEL = int(env.get("UPLOAD_CHANNEL", "-1002137802831"))
     UPDATE_CHANNEL = int(env.get("UPDATE_CHANNEL", "-1002093160666"))   #-1002083903461
     INDEX_CHANNELS = int(env.get("INDEX_CHANNELS", "-1002145329802"))
 class Server:

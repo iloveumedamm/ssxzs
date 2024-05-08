@@ -39,7 +39,7 @@ class Telegram:
     
 class Server:
     PORT = int(env.get("PORT", 9896))
-    BIND_ADDRESS = str(env.get("BIND_ADDRESS", "49.13.83.29"))
+    BIND_ADDRESS = str(env.get("BIND_ADDRESS", "0.0.0.0"))
     PING_INTERVAL = int(env.get("PING_INTERVAL", "1200"))
     HAS_SSL = str(env.get("HAS_SSL", "1").lower()) in ("1", "true", "t", "yes", "y")
     NO_PORT = str(env.get("NO_PORT", "1").lower()) in ("1", "true", "t", "yes", "y")

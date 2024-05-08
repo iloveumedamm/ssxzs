@@ -75,8 +75,9 @@ async def channel_receive_handler(bot: Client, message: Message):
         inserted_id = await db.add_file(get_file_info(message))
         await get_file_ids(False, inserted_id, multi_clients, message)
         reply_markup, stream_link = await gen_link(_id=inserted_id)
-        bot.send_message(chat_id=Telegram.FLOG_CHANNEL,
+        await bot.send_message(chat_id=Telegram.FLOG_CHANNEL,
                                text=f"Gᴏᴛ FʟᴏᴏᴅWᴀɪᴛ ᴏғ")
+        
 
     except FloodWait as w:
         print(f"Sleeping for {str(w.x)}s")

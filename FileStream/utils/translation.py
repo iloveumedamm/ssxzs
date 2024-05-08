@@ -32,9 +32,9 @@ class LANG(object):
 <b>🔗 Sʜᴀʀᴇ :</b> <code>{}</code>\n"""
 
     STREAM_TEXT_X = """
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <b>{}</b>\n
-<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <code>{}</code>\n
-<b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <code>{}</code>\n</b>
+<b>{}</b>\n
+<b>Fɪʟᴇ ꜱɪᴢᴇ :</b> <code>{}</code>\n
+<b>Dᴏᴡɴʟᴏᴀᴅ Link:</b> <code>{}</code>\n</b>
 """
 
     STREAM_TEXT_Y = """

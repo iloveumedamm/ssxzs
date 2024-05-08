@@ -32,7 +32,7 @@ class LANG(object):
 <b>🔗 Sʜᴀʀᴇ :</b> <code>{}</code>\n"""
 
     STREAM_TEXT_X = """
-<b>{}</b>\n
+📂<b>{}</b>\n
 <b>Fɪʟᴇ ꜱɪᴢᴇ :</b> <code>{}</code>\n
 <b>Dᴏᴡɴʟᴏᴀᴅ Link:</b> <code>{}</code>\n</b>
 """

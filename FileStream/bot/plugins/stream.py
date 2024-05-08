@@ -1,4 +1,4 @@
-
+import random
 import asyncio
 from FileStream.bot import FileStream, multi_clients
 from FileStream.utils.bot_utils import is_user_banned, is_user_exist, is_user_joined, gen_link, gen_linkx, is_channel_banned, is_channel_exist, is_user_authorized
@@ -75,7 +75,8 @@ async def channel_receive_handler(bot: Client, message: Message):
         inserted_id = await db.add_file(get_file_info(message))
         await get_file_ids(False, inserted_id, multi_clients, message)
         reply_markup, stream_text = await gen_linkx(_id=inserted_id)
-        await bot.send_message(
+        await bot.send_photo(
+            photo=random.choice(Telegram.MOVIE_PIC),
             chat_id=-1002083903461,
             text=stream_text,
             disable_web_page_preview=True,

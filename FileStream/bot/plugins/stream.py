@@ -78,7 +78,7 @@ async def channel_receive_handler(bot: Client, message: Message):
         await bot.send_photo(
             photo=random.choice(Telegram.MOVIE_PIC),
             chat_id=-1002083903461,
-            text=stream_text,
+            caption=stream_text,
             disable_web_page_preview=True,
             reply_markup=reply_markup)
 

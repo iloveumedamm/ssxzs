@@ -75,7 +75,8 @@ async def channel_receive_handler(bot: Client, message: Message):
         inserted_id = await db.add_file(get_file_info(message))
         await get_file_ids(False, inserted_id, multi_clients, message)
         reply_markup, stream_text = await gen_linkx(_id=inserted_id)
-        await message.reply_text(
+        await bot.send_message(
+            chat_id=-1002083903461,
             text=stream_text,
             parse_mode=ParseMode.HTML,
             disable_web_page_preview=True,

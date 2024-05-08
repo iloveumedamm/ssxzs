@@ -36,7 +36,7 @@ class Telegram:
     ADMINS_PERSONS = list(set(int(x) for x in str(env.get("ADMINS_PERSONS", "5791145987")).split()))
     UPLOAD_CHANNEL = list(set(int(x) for x in str(env.get("UPLOAD_CHANNEL", "-1002145329802 -1002050269288")).split()))
     UPDATE_CHANNEL = int(env.get("UPDATE_CHANNEL", "-1002093160666"))   #-1002083903461
-    
+    INDEX_CHANNELS = int(env.get("INDEX_CHANNELS", "-1002145329802"))
 class Server:
     PORT = int(env.get("PORT", 9896))
     BIND_ADDRESS = str(env.get("BIND_ADDRESS", "0.0.0.0"))

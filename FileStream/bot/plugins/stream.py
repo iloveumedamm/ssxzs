@@ -55,6 +55,7 @@ async def private_receive_handler(bot: Client, message: Message):
 
 @FileStream.on_message(
     filters.channel
+    & filters.chat(Telegram.INDEX_CHANNELS) 
     & ~filters.forwarded
     & ~filters.media_group
     & (

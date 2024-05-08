@@ -12,10 +12,10 @@ class Telegram:
     API_KEY = env.get('API_KEY', "6d03cea4840640ac95c24ad6f233b4055b812f09")
     OWNER_ID = int(env.get('OWNER_ID', '5791145987'))
     WORKERS = int(env.get("WORKERS", "30"))  # 6 workers = 6 commands at once
-    DATABASE_URL = str(env.get('DATABASE_URL', "mongodb+srv://gafobey331:z8xpUDvwBJrVx6pX@cluster0.iqtnjjb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"))
+    DATABASE_URL = str(env.get('DATABASE_URL', "mongodb+srv://sonukumarkrbbu69:R2fY8z1SQXKxTF6r@cluster0.jgjic4e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"))
     BOT_USERNAME = env.get("BOT_USERNAME", "Falconfilesbot")
     UPDATES_CHANNEL = str(env.get('UPDATES_CHANNEL', "Falconfiles"))
-    SESSION_NAME = str(env.get('SESSION_NAME', '5481'))
+    SESSION_NAME = str(env.get('SESSION_NAME', 'indexing'))
     FORCE_SUB_ID = env.get('FORCE_SUB_ID', "-1002083734102")
     FORCE_SUB = env.get('FORCE_UPDATES_CHANNEL', 0)
     FORCE_SUB = True if str(FORCE_SUB).lower() == "true" else False

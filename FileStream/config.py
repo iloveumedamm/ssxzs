@@ -24,7 +24,7 @@ class Telegram:
     START_PIC = env.get('START_PIC')
     VERIFY_PIC = env.get('VERIFY_PIC')
     DELETE_TIME = int(env.get('AUTO_DELETE_TIME', 1800))
-    MOVIE_PIC = (env.get('MOVIE_PIC', "https://graph.org/file/70b6bbd733b2b2dffd96f.png")).split()
+    MOVIE_PIC = (env.get('MOVIE_PIC', "https://graph.org/file/70b6bbd733b2b2dffd96f.png https://graph.org/file/4df724f05028b3b4eacce.jpg https://graph.org/file/f617ed08634217edc26ea.jpg")).split()
     VERIFIED_PIC = env.get('VERIFIED_PIC')
     MULTI_CLIENT = True
     GROUP = int(env.get("GROUP", "-1004142352920"))

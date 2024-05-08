@@ -60,10 +60,6 @@ async def private_receive_handler(bot: Client, message: Message):
     & (
             filters.document
             | filters.video
-            | filters.video_note
-            | filters.audio
-            | filters.voice
-            | filters.photo
     )
 )
 async def channel_receive_handler(bot: Client, message: Message):

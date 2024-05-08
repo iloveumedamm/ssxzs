@@ -31,7 +31,7 @@ async def root_route_handler(_):
         }
     )
 
-@routes.get("/id_573929gehwbwhjhdbejsbb/stream_cloud/{path}", allow_head=True)
+@routes.get("/watch/{path}", allow_head=True)
 async def stream_handler(request: web.Request):
     try:
         path = request.match_info["path"]

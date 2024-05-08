@@ -1,171 +1,172 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FileStreamBot | {{file_name}}</title>
-    <link rel="icon" href="https://i.ibb.co/Hh4kF2b/icon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="https://i.ibb.co/Hh4kF2b/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/proavipatil/data@main/fs/src/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/proavipatil/data@main/fs/src/plyr.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="og:title" content="">
+    <meta name="og:description" content="">
+    <meta property="og:image" content=""/>
+    <meta charset="utf-8"/>
+    <title>Falconfiles</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipmbDZugJH-QN6oWwTN9kg7okT_proJs9JAaArD9PSAKp07a7ksAKrOf1D7uwJv6Uh7e6opWWUqmRmj0xVZHzKL1QZdMVi8itjjY_6n_19sA9-NbrTQKKjrwQ62INO4VUztQAReR6_sthoJ_3DsS9pRh9MnH0jgWOk9t4K6PAONj7xHut9GEFeOFA6iLK3/s488/CC_20240507_112417.png' type='image/x-icon' rel='icon'/>
+    <link href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipmbDZugJH-QN6oWwTN9kg7okT_proJs9JAaArD9PSAKp07a7ksAKrOf1D7uwJv6Uh7e6opWWUqmRmj0xVZHzKL1QZdMVi8itjjY_6n_19sA9-NbrTQKKjrwQ62INO4VUztQAReR6_sthoJ_3DsS9pRh9MnH0jgWOk9t4K6PAONj7xHut9GEFeOFA6iLK3/s488/CC_20240507_112417.png' type='image/x-icon' rel='shortcut icon'/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://Falconfiles.in/akira_theme/build/css/styles.min.css?ver=6.4.0"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .container-3d {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            background: linear-gradient(145deg, #e0e0e0, #ffffff);
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .container-3d:hover {
+            transform: translate3d(0, -5px, 0);
+            box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+        }
+        .btn-3d {
+            position: relative;
+            overflow: hidden;
+            transform: translateZ(0);
+            margin-bottom: 10px;
+            background-color: #e0e0e0; /* Matching container background color */
+            color: #333; /* Text color */
+            border: none; /* Remove default button border */
+            transition: all 0.3s ease;
+        }
+        .btn-3d:hover {
+            background-color: #ccc; /* Darken button color on hover */
+        }
+        .btn-3d:before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 100%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: top 0.3s ease, background 0.3s ease;
+            border-radius: 50%;
+            transform: translate(-50%, -75%) rotateX(0) scale(1.2);
+            transform-origin: 50% 0%;
+        }
+        .btn-3d:hover:before {
+            top: 0;
+            background: rgba(255, 255, 255, 0);
+        }
+        .navbar-nav .nav-link {
+            color: #000000; /* Black text color for navbar items */
+        }
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
 </head>
+<body class="banner-page">
+<div id="wrapper" class="wrapper clearfix">
+    <header id="navbar-spy" class="header header-1 header-transparent header-fixed">
+        <nav id="primary-menu" class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand logo-image" href="https://Falconfiles.in/"><img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihAE4Cov-C2y5akqFsudT37q-ZCts7h-GsZ4mntjvLax_40PXAPc2zUYvzXDRG3GRfFKBo3WW29nOZ03kvhR1st0-Wv2ruxgP1f4aMAuoO-d0oo21viTsf8oDJI-y_PBZXCQOJmwaVtOpmZBwEpX8L9itrpCVADOrRQsUFi34zzzofpbgoeUEVF8jULHtC/s1600/1715063937434.png' alt='JNG Link' /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
 
-<body>
-    <nav>
-        <div class="nleft">
-            <a href="#">
-                <h3 id="heading" style="z-index: 100;" class="magnet title">FILE STREAM</h3>
-            </a>
-        </div>
-        <div class="nryt">
-            <a class="home-btn magnet" href="#main" onclick="toggleWidthnav(this)">HOME</a>
-
-            <a href="#abtus" class="about-btn magnet" onclick="toggleWidthnav(this)">ABOUT</a>
-        </div>
-    </nav>
-    <center>
-        <div class="about-nav">
-            <a href="#abtus" class="wlcm magnet" onclick="toggleWidth(this)">WELCOME</a>
-            <a href="#channels" class="abt-chnl magnet" onclick="toggleWidth(this)">CHANNELS</a>
-            <a href="#contact" class="magnet contact-btn" onclick="toggleWidth(this)">CONTACT</a>
-        </div>
-    </center>
-
-    <div class="outer">
-        <div class="inner">
-            <div class="main" id="main">
-                <video id="player" class="player" src="{{file_url}}" type="video/mp4" playsinline controls
+<span class="toogle-inner"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="https://Falconfiles.in/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://Falconfiles.in/auth/signin">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://Falconfiles.in/auth/signup">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<br>
+<br>
+<br>
+<br>
+ 
+<div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+<video id="player" class="player" src="{{file_url}}" type="video/mp4" playsinline controls
                     width="100%"></video>
                 <div class="player"></div>
-                <div class="file-name">
+            </div>
+        </div>
+</div>
+
+
+&nbsp;<div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="container-3d">
+
                     <h4 style="display: inline;">File Name: </h4>
-                    <p style="display: inline;" id="myDiv">{{file_name}}</p><br>
+                    <p style="display: inline;" id="myDiv">not define</p><br>
                     <h4 style="display: inline;">File Size: </h4>
-                    <p style="display: inline;">{{file_size}}</p>
+                    <p style="display: inline;">***</p><br>
+                    <h4 style="display: inline;">Share by: </h4>
+                    <p style="display: inline;"><?php echo $user; ?></p><br>
+                    <h4 style="display: inline;">Created at: </h4>
+                    <p style="display: inline;"><?php echo $created; ?></p>
                 </div>
-                <div class="downloadBtn">
-                    <button class="magnet" onclick="streamDownload()">
-                        <img style="height: 30px;" src="https://i.ibb.co/RjzYttX/dl.png" alt="">download video
-                    </button>
-                    <button class="magnet" onclick="copyStreamLink()">
-                        <img src="https://i.ibb.co/CM4Y586/link.png" alt="Copy Link">copy link
-                    </button>
-                    <button class="magnet" onclick="vlc_player()">
-                        <img src="https://i.ibb.co/px6fQs1/vlc.png" alt="">watch in VLC PLAYER
-                    </button>
-                    <button class="magnet" onclick="mx_player()">
-                        <img src="https://i.ibb.co/41WvtQ3/mx.png" alt="">watch in MX PLAYER
-                    </button>
-                    <button class="magnet" onclick="n_player()">
-                        <img src="https://i.ibb.co/Hd2dS4t/nPlayer.png" alt="">watch in nPlayer
-                    </button>
-                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 d-flex justify-content-center">
+            <div class="col-md-4">
+                <a href="#" class="btn btn-success btn-lg btn-block btn-3d" onclick="vlc_player()">
+    <img src="https://i.ibb.co/px6fQs1/vlc.png" alt="Logo" class="img-fluid mr-2" style="max-width: 40px;"> Watch on VLC
+</a>
 
             </div>
-            <div class="abt">
-                <div class="about">
-                    <div class="about-dets">
+    </div>
+<hr>
+    <div class="container mt-5 d-flex justify-content-center">
+            <div class="col-md-4">
+                <a href="#" class="btn btn-success btn-lg btn-block btn-3d" onclick="mx_player()">
+    <img src="https://i.ibb.co/41WvtQ3/mx.png" alt="Logo" class="img-fluid mr-2" style="max-width: 40px;"> Watch on MX PLAYER
+</a>
+            </div>
+    </div>
 
-                        <div class="abt-sec" id="abtus" style="padding: 160px 30px;">
-                            <h1 style="text-align: center;">WELCOME TO OUR <Span>FILE STREAM</Span> BOT</h1>
-                            <p style="text-align: center; line-height: 2;word-spacing: 2px;  letter-spacing: 0.8px;">
-                                This is a Telegram Bot to Stream <span>Movies</span> and <span>Series</span> directly on
-                                Telegram. You can also
-                                <span>download</span> them if you want. This bot is developed by <a
-                                    href="https://github.com/AviPatilPro"><span style="font-weight: 700;">Avi</span></a>
-                                <br><br>If you like this bot, then don't
-                                forget to share it with your friends and family.
-                            </p>
+
+    <footer id="footer" class="footer">
+        <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+        <div class="footer-top">
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <hr>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="footer-copyright">
+                            <span>Copyright &copy; Falconfiles 2024</span>
                         </div>
-
-                        <div class="abt-sec" id="channels">
-                            <h1>JOIN OUR <span>TELEGRAM</span> CHANNELS</h1>
-                            <div class="links chnl-link">
-                                <a class="magnet" href="https://t.me/CheapieDeals">
-                                    <button>CHEAP DEALS</button>
-                                </a>
-                                <a class="magnet" href="https://t.me/FilmyPixel">
-                                    <button>FILMYPIXEL</button>
-                                </a>
-                                <a class="magnet" href="https://t.me/PostersZone">
-                                    <button>POSTERS ZONE</button>
-                                </a>
-                                <a class="magnet" href="https://t.me/EpitomeQuality">
-                                    <button>EPITOME QUALITY</button>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="abt-sec" id="contact">
-                            <p style="text-align: center;">Report Bugs and Contact us on Telegram Below</p>
-                            <div class="links contact">
-                                <a href="https://t.me/AvishkarPatil">
-                                    <button>CONTACT</button>
-                                </a>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
         </div>
-        <footer>
-            <center>
+    </footer>
 
-                <div class="movie-cont">
-                    <div class="movieSug">
-                        <div class="movieDets">
-
-                        </div>
-                        <div class="movieimg">
-                            <img src="">
-                        </div>
-                    </div>
-                    <div class="low-width-movie-dets">
-                        <div class="movieStsBar">
-                            <div class="movieDets-mini">
-
-                            </div>
-                        </div>
-                    </div>
-                    <button class="ranMovBtn" onclick="getDets()">Get More Movies Suggestion</button>
-                </div>
-
-            </center>
-
-            <center>
-                <div class="copyright">
-                    <h5 class="text-center">Copyright © 2024 <a href="https://github.com/AviPatilPro"><span
-                                style="font-weight: 700;">Avishkar Patil</span></a>. All
-                        Rights Reserved.</h5>
-                </div>
-            </center>
-        </footer>
-    </div>
-</body>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const uncopyableElement = document.querySelector(".uncopyable");
-
-        uncopyableElement.addEventListener("selectstart", function (event) {
-            event.preventDefault();
-        });
-    });
+    <script data-cfasync="false" src="https://Falconfiles.in/js/ads.js"></script>
+    <script src="https://Falconfiles.in/akira_theme/build/js/script.min.js?ver=6.4.0"></script>
+    <script src="https://www.recaptcha.net/recaptcha/api.js?onload=onloadRecaptchaCallback&render=explicit" async defer></script>
+    <script>
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+});
 </script>
-<script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
-<script src="https://proavipatil.github.io/data/fs/src/script.js"></script>
-
+</body>
 </html>

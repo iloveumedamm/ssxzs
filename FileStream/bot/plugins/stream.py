@@ -60,6 +60,10 @@ async def private_receive_handler(bot: Client, message: Message):
     & (
             filters.document
             | filters.video
+            | filters.video_note
+            | filters.audio
+            | filters.voice
+            | filters.photo
     )
 )
 async def channel_receive_handler(bot: Client, message: Message):
@@ -67,20 +71,17 @@ async def channel_receive_handler(bot: Client, message: Message):
         return
     await is_channel_exist(bot, message)
 
-    contr = f"Adding To Db....."
-    await message.reply_text(contr)
-
     try:
         inserted_id = await db.add_file(get_file_info(message))
         await get_file_ids(False, inserted_id, multi_clients, message)
-        reply_markup, stream_text = await gen_linkx(_id=inserted_id)
-        await bot.send_photo(
-            photo=Telegram.MOVIE_PIC,
-            chat_id=Telegram.UPDATE_CHANNEL,
-            caption=stream_text,
-            parse_mode=ParseMode.HTML
+        reply_markup, stream_link = await gen_link(_id=inserted_id)
+        await bot.edit_message_reply_markup(
+            chat_id=message.chat.id,
+            message_id=message.id,
+            reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 📥",
+                                       url=f"https://t.me/{FileStream.username}?start=stream_{str(inserted_id)}")]])
         )
-        
 
     except FloodWait as w:
         print(f"Sleeping for {str(w.x)}s")
@@ -91,4 +92,4 @@ async def channel_receive_handler(bot: Client, message: Message):
     except Exception as e:
         await bot.send_message(chat_id=Telegram.ULOG_CHANNEL, text=f"**#EʀʀᴏʀTʀᴀᴄᴋᴇʙᴀᴄᴋ:** `{e}`",
                                disable_web_page_preview=True)
-        print(f"Cᴀɴ'ᴛ Eᴅɪᴛ Bʀᴏᴀᴅᴄᴀsᴛ Mᴇssᴀɢᴇ!\nEʀʀᴏʀ:  **Gɪᴠᴇ ᴍᴇ ᴇᴅɪᴛ ᴘᴇʀᴍɪssɪᴏɴ ɪɴ ᴜᴘᴅᴀᴛᴇs ᴀɴᴅ ʙɪɴ Cʜᴀɴɴᴇʟ!{e}**")        
+        print(f"Cᴀɴ'ᴛ Eᴅɪᴛ Bʀᴏᴀᴅᴄᴀsᴛ Mᴇssᴀɢᴇ!\nEʀʀᴏʀ:  **Gɪᴠᴇ ᴍᴇ ᴇᴅɪᴛ ᴘᴇʀᴍɪssɪᴏɴ ɪɴ ᴜᴘᴅᴀᴛᴇs ᴀɴᴅ ʙɪɴ Cʜᴀɴɴᴇʟ!{e}**")

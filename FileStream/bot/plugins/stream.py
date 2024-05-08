@@ -77,9 +77,8 @@ async def channel_receive_handler(bot: Client, message: Message):
         reply_markup, stream_text = await gen_linkx(_id=inserted_id)
         await bot.send_photo(
             photo=random.choice(Telegram.MOVIE_PIC),
-            chat_id=-1002083903461,
+            chat_id=Telegram.UPLOAD_CHANNEL,
             caption=stream_text,
-            disable_web_page_preview=True,
             reply_markup=reply_markup)
 
     except FloodWait as w:
